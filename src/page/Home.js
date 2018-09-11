@@ -14,6 +14,7 @@ import Navbar from '../component/Navbar';
 import SideMenu from '../component/SideMenu';
 import SideMenuDrawer from '../component/SideMenuDrawer';
 import CategoryBlock from '../component/CategoryBlock';
+import Colors from "../Colors";
 
 
 export default class Home extends Component {
@@ -21,17 +22,17 @@ export default class Home extends Component {
     var left = (
       <Left style={{flex:1}}>
         <Button onPress={() => this._sideMenuDrawer.open()} transparent>
-          <Icon name='ios-menu-outline' />
+          <Icon name='ios-menu-outline' style={{color: Colors.navTextColor}} />
         </Button>
       </Left>
     );
     var right = (
       <Right style={{flex:1}}>
         <Button onPress={() => Actions.search()} transparent>
-          <Icon name='ios-search-outline' />
+          <Icon name='ios-search-outline' style={{color: Colors.navTextColor}} />
         </Button>
         <Button onPress={() => Actions.cart()} transparent>
-          <Icon name='ios-cart' />
+          <Icon name='ios-cart' style={{color: Colors.navTextColor}} />
         </Button>
       </Right>
     );
@@ -63,21 +64,21 @@ var categories = [
   {
     id: 1,
     title: 'MEN',
-    image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_489/v1500284127/pexels-photo-497848_yenhuf.jpg'
+    image: 'https://res.cloudinary.com/atf19/image/upload/c_scale,w_489/v1500284127/pexels-photo-497848_yenhuf.jpg'
   },
   {
     id: 2,
     title: 'WOMEN',
-    image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_460/v1500284237/pexels-photo-324030_wakzz4.jpg'
+    image: 'https://res.cloudinary.com/atf19/image/upload/c_scale,w_460/v1500284237/pexels-photo-324030_wakzz4.jpg'
   },
   {
     id: 3,
     title: 'KIDS',
-    image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_445/v1500284286/child-childrens-baby-children-s_shcevh.jpg'
+    image: 'https://res.cloudinary.com/atf19/image/upload/c_scale,w_445/v1500284286/child-childrens-baby-children-s_shcevh.jpg'
   },
   {
     id: 4,
     title: 'ACCESORIES',
-    image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_467/v1500284346/pexels-photo-293229_qxnjtd.jpg'
+    image: 'https://res.cloudinary.com/atf19/image/upload/c_scale,w_467/v1500284346/pexels-photo-293229_qxnjtd.jpg'
   }
 ];
